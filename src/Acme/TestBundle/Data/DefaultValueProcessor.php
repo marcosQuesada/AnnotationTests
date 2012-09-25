@@ -14,7 +14,6 @@ class DefaultValueProcessor
  
     public function fillObjectWithDefaultValues($object)
     {
-        ladybug_dump($object);
         if (!is_object($object)) {
             throw new \InvalidArgumentException('No object provided');
         }

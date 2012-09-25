@@ -22,13 +22,11 @@ class DefaultController extends Controller
      */
     public function indexAction($name)
     {
-
-
         $processor = $this->container->get('sp_annotation.default_value_processor');
         $object = new DomainClass;
         $entity = $processor->fillObjectWithDefaultValues($object);
          
-        ladybug_dump($entity);
+         ladybug_dump($entity);
         return array('name' => $name);
     }
 }

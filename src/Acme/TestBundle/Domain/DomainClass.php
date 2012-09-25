@@ -15,4 +15,9 @@ class DomainClass
      * @DefaultValue(name="idu", type="string", default="a")
      */
     protected $idUnit;  
+
+    /**
+     * @DefaultValue(name="test", type="boolean", default=true)
+     */
+    protected $test;      
 }

@@ -11,7 +11,8 @@ class Entity
 			$this->$key = (int)$value;
 		if ($type == 'string')
 			$this->$key = (string)$value;		
-
+		if ($type == 'boolean')
+			$this->$key = (bool)$value;	
 		return $this;
 	}
 }
