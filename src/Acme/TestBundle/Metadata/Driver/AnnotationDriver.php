@@ -29,9 +29,9 @@ class AnnotationDriver implements DriverInterface
 
             if (null !== $annotation) {
                 // a "@DefaultValue" annotation was found
-                $propertyMetadata->name = $annotation->getName();
-                $propertyMetadata->type = $annotation->getType();
-                $propertyMetadata->default = $annotation->getDefault();
+                $propertyMetadata->setName($annotation->getName());
+                $propertyMetadata->setType($annotation->getType());
+                $propertyMetadata->setDefault($annotation->getDefault());
             }
  
             $classMetadata->addPropertyMetadata($propertyMetadata);

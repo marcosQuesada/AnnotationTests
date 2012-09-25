@@ -23,7 +23,7 @@ class DefaultValueProcessor
 
         $entity = new \Acme\TestBundle\Entity\Entity();
         foreach ($classMetadata->propertyMetadata as $propertyMetadata) {
-            if (isset($propertyMetadata->name)&&isset($propertyMetadata->type)&&isset($propertyMetadata->default)) 
+            if (isset($propertyMetadata->name)&&isset($propertyMetadata->type)) 
             {
                 $entity->add($propertyMetadata->name, $propertyMetadata->default, $propertyMetadata->type);
                 
