@@ -1,0 +1,19 @@
+sp_annotation:
+    resource: "@SPAnnotationBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+acme_anntations:
+    resource: "@AcmeAnnotationsBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+acme_test:
+    resource: "@AcmeTestBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+# Internal routing configuration to handle ESI
+#_internal:
+#    resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
+#    prefix:   /_internal
