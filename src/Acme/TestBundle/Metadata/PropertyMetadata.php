@@ -6,18 +6,20 @@ use Metadata\PropertyMetadata as BasePropertyMetadata;
  
 class PropertyMetadata extends BasePropertyMetadata
 {
-    public $name;
-    public $type;
-    public $default;
+	public $name;
+	public $class;
+    protected $attributeName;
+    protected $type;
+    protected $default;
 
-    public function getName()
+    public function getAttributeName()
     {
-        return $this->name;
+        return $this->attributeName;
     }
     
-    public function setName($name)
+    public function setAttributeName($name)
     {
-        $this->name = $name;
+        $this->attributeName = $name;
         return $this;
     }
 
