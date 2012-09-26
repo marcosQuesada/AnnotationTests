@@ -7,6 +7,8 @@ class Entity
     public function add($key, $value, $type)
     {
         settype($value, $type);
+        $this->$key = $value;
+        
         return $this;
     }
 
